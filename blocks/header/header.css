@@ -62,6 +62,7 @@ header nav a:any-link {
 
 header nav a:hover {
   text-decoration: none;
+  opacity: 0.6;
 }
 
 .nav-brand .default-content-wrapper a {

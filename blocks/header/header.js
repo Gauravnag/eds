@@ -129,12 +129,16 @@ export default async function decorate(block) {
   });
 
   const navBrand = nav.querySelector('.nav-brand');
-  const brandLink = navBrand.querySelector('.button');
-  if (brandLink) {
-    brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+  if (navBrand) {
+    const wrapper = navBrand.querySelector('.default-content-wrapper');
+    if (wrapper) {
+      wrapper.innerHTML = `
+        <a href="/" title="EDS Training">
+          <img src="../../images/logo.png" alt="EDS Training Logo" />
+        </a>
+      `;
+    }
   }
-
   // const navSections = nav.querySelector('.nav-sections');
   // if (navSections) {
   //   navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
