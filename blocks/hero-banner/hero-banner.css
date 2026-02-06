@@ -1,0 +1,49 @@
+.hero-banner {
+    background-color: #000;
+}
+
+.hero-banner > .container {
+    height: 400px; 
+    background: var(--bg1) center/cover no-repeat;
+    align-items: center;
+    padding: 0 60px;
+    position: relative;
+}
+
+.bottom-bar > .container , .hero-banner > .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-content {
+    padding-top: 20px;
+}
+
+.hero-banner h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #4da6ff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+
+.hero-banner h1 + p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 8px;
+    width: 50%;
+}
+
+.bottom-bar {
+    background: lightslategray;
+    padding: 20px 0;
+    font-size: 15px;
+    color: #fff;
+}
+
+main .section .hero-banner-wrapper {
+    max-width: none;
+    padding: 0;
+}

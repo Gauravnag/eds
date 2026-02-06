@@ -1,6 +1,7 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: #526e85;
+  color: #fff;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -56,6 +57,15 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  text-decoration: none;
+}
+
+.nav-brand .default-content-wrapper a {
+  font-size: 20px;
 }
 
 /* hamburger */
@@ -269,4 +279,9 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+.nav-sections .default-content-wrapper {
+    display: flex;
+    justify-content: end;
 }
